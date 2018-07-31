@@ -1,0 +1,2 @@
+<!---Controller and Action have been verified by VerifyActionRequest function in verify controller so call HandleRequest of the requested Controller--->
+<cfinvoke component="/controllers/#REQUEST.Controller#" method="HandleRequest">

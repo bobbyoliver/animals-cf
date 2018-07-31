@@ -1,0 +1,4 @@
+WEB-INF
+#1st line without "!" tells BB to ignore all files, but the 2nd line with "!" tells BB to keep the .keep file which keeps file structure but does not push files to repo or prod
+#     filestemp/*
+#     !filestemp/.keep

@@ -1,0 +1,70 @@
+/*
+col-xs 0px    to   575px
+col-sm 576px  to   767px
+col-md 768px  to   991px
+col-lg 992px  to   1199px
+col-xl 1200px and up
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+/*GLOBAL==========================================================================================================*/
+/*
+IE10 in Windows Phone 8 workaround
+https://timkadlec.com/2013/01/windows-phone-8-and-device-width/
+-Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, optionally include the CSS and JS in the above post in all files to work around this problem until Microsoft issues a fix.
+-Removed the JS from the ready function and put it at the bottom of the head section.
+*/
+@-webkit-viewport   {width:device-width;}
+@-moz-viewport      {width:device-width;}
+@-ms-viewport       {width:device-width;}
+@-o-viewport        {width:device-width;}
+@viewport           {width:device-width;}
+
+/*Forces a vertical scroll bar to keep page from jumping in certain browsers*/
+/*http://stackoverflow.com/questions/24700184/how-do-i-force-a-vertical-scrollbar-to-appear*/
+/*html {overflow-y:scroll;}*/
+body {overflow-y:scroll;}
+
+/*Stackoverflow link for flushing footer: http://stackoverflow.com/questions/10099422/flushing-footer-to-bottom-of-the-page-twitter-bootstrap*/
+/*Forces a flushing footer*/
+html, body {height:100%;}
+#wrapper-outter {min-height:100%;}
+/*2014-08-09
+-Changed "overflow:auto" to "overflow:visible" to help with making button dropdowns viewable instead of cutting off on grid pages where there is no content
+-"padding-bottom" needs to be greater than footer height
+*/
+#wrapper-inner {overflow:visible; padding-bottom:50px;}
+/*"margin-top:-50px" is negative value of footer height*/
+#wrapper-footer {position:relative; margin-top:-50px; height:50px; clear:both; background:#E8E8E8; border-top:1px solid #B8B8B8;}
+/*Debug style*/
+#debug {background:#FDCFCE;}
+#debug .table-striped tbody tr:nth-child(even) td {background-color:#D0D0D0;}
+/*Grid Tables*/
+/*Delete button for checkboxes stacks so vertically align all "th" data in middle, BG color is "light" hover color, left aligned instead of center when switched to "container-fluid"*/
+.sys-table-grid thead tr th {vertical-align:middle; background-color:#E2E6EA; border-bottom:solid 1px #000000;}
+/*Sets active of dropdowns to "dark" or black to match theme*/
+.sys-dropdown-menu-dark .dropdown-item.active, .sys-dropdown-menu-dark .dropdown-item:active {background-color: #373A3C;}
+/*Forces BG color of outline-danger button to stay white instead of being transparent*/
+.sys-btn-bg-outline-secondary {background-color:#FFFFFF;}
+.sys-btn-bg-outline-secondary:hover {color:#FFFFFF; background-color:#868E96;}
+.sys-btn-bg-outline-danger {background-color:#FFFFFF;}
+.sys-btn-bg-outline-danger:hover {color:#FFFFFF; background-color:#DC3545;}
+.sys-btn-bg-outline-dark {background-color:#FFFFFF;}
+.sys-btn-bg-outline-dark:hover {color:#FFFFFF; background-color:#373A3C;}
