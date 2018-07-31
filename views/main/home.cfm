@@ -14,7 +14,7 @@
                     <li>
                         Code and Demo
                         <ul>
-                            <li>Code is available on my GitHub at <a href="https://github.com/bobbyoliver/animalsdemo">github.com/bobbyoliver/animalsdemo</a></li>
+                            <li>Code is available on my GitHub at <a href="https://github.com/bobbyoliver/animals-cf">github.com/bobbyoliver/animals-cf</a></li>
                             <li>A live working demo can be viewed at <a href="http://animals.bobbyoliver.com">animals.bobbyoliver.com</a></li>
                         </ul>
                     </li>

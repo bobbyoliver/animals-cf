@@ -5,7 +5,7 @@
 
 ## Code and Demo
 
-- Code is available on my GitHub at https://github.com/bobbyoliver/animalsdemo
+- Code is available on my GitHub at https://github.com/bobbyoliver/animals-cf
 - A live working demo can be viewed at http://animals.bobbyoliver.com
 
 ## Additional Info
